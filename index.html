@@ -17,31 +17,28 @@
 </head>
 
 <body>
-
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="navbar__logo">
+            <i class="fa-solid fa-heart"></i>
+        </div>
+        <ul class="navbar__menu">
+            <li class="navbar__menu__item" data-link="#home">Home</li>
+            <li class="navbar__menu__item" data-link="#about">About</li>
+            <li class="navbar__menu__item" data-link="#skills">Skills</li>
+            <li class="navbar__menu__item" data-link="#projects">Projects</li>
+            <li class="navbar__menu__item" data-link="#contact">Contact</li>
+        </ul>
+        <!-- toggle button -->
+        <button class="navbar__toggle-btn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </nav>
     <!-- Home -->
     <section id="home">
-        <!-- Navbar -->
-        <nav id="navbar">
-            <div class="navbar__logo">
-                <i class="fa-solid fa-heart"></i>
-            </div>
-            <div class="navbar__menu">
-                <ul class="navbar__menu">
-                    <li class="navbar__menu__item">Home</li>
-                    <li class="navbar__menu__item">About</li>
-                    <li class="navbar__menu__item">Skills</li>
-                    <li class="navbar__menu__item">Projects</li>
-                    <li class="navbar__menu__item">Contact</li>
-                </ul>
-            </div>
-            <!-- toggle button -->
-            <button class="navbar__toggle-btn">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-        </nav>
         <!-- logo -->
         <img src="imgs/BOMI_logo_noback.png" alt="Bomi logo" class="home__logo">
-        <br /><button class="home__contect">CONTECT ME</button>
+        <br /><button class="home__contact">CONTACT ME</button>
     </section>
     <!-- About -->
     <section id="about" class="section">
@@ -151,51 +148,51 @@
     </section>
     <!-- Projects -->
     <section id="projects" class="section">
-       <div class="secion__container">
-        <h1>Projects</h1>
-        <div class="projets__categories">
-            <button class="category__btn">
-                All<span class="category__count">4</span>
-            </button>
-            <button class="category__btn">
-                Team<span class="category__count">1</span>
-            </button>
-            <button class="category__btn">
-                Single<span class="category__count">3</span>
-            </button>
-        </div>
-        <div class="projects__list">
-            <a href="https://github.com/MinJeung-Kim/Team-Project.git" class="project" target="_blank">
-                <img class="project__img" src="imgs/nike_logo.png" alt="nike">
-                <div class="project__description">
-                    <h3>NIKE Clone Coding</h3>
-                    <span>HTML, CSS, Javascript, Spring Boot, MariaDB</span>
-                </div>
-            </a>
-            <a href="https://github.com/bom318/BoardPractice.git" class="project" target="_blank">
-                <img class="project__img" src="imgs/net_board.png" alt="board">
-                <div class="project__description">
-                    <h3>.net Board</h3>
-                    <span>HTML, CSS, Javascript, C#, .net, MS server</span>
-                </div>
-            </a>
-            <a href="https://github.com/bom318/UpdatePractice.git" class="project" target="_blank">
-                <img class="project__img" src="imgs/FILE.png" alt="file_upload">
-                <div class="project__description">
-                    <h3>.net File Management</h3>
-                    <span>HTML, CSS, Javascript, C#, .net, MS server</span>
-                </div>
-            </a>
-            <a href="" class="project" target="_blank">
-                <img class="project__img" src="imgs/ready.png" alt="my recipe">
-                <div class="project__description">
-                    <h3>My Recipe</h3>
-                    <span>HTML, CSS, Javascript, Spring Boot, MariaDB</span>
-                </div>
-            </a>
+        <div class="secion__container">
+            <h1>Projects</h1>
+            <div class="projets__categories">
+                <button class="category__btn selected" data-filter="all">
+                    All<span class="category__count">4</span>
+                </button>
+                <button class="category__btn" data-filter="team">
+                    Team<span class="category__count">1</span>
+                </button>
+                <button class="category__btn" data-filter="solo">
+                    Single<span class="category__count">3</span>
+                </button>
+            </div>
+            <div class="projects__list">
+                <a href="https://github.com/MinJeung-Kim/Team-Project.git" class="project" target="_blank" data-type="team">
+                    <img class="project__img" src="imgs/nike_logo.png" alt="nike">
+                    <div class="project__description">
+                        <h3>NIKE Clone Coding</h3>
+                        <span>HTML, CSS, Javascript, Spring Boot, MariaDB</span>
+                    </div>
+                </a>
+                <a href="https://github.com/bom318/BoardPractice.git" class="project" target="_blank" data-type="solo">
+                    <img class="project__img" src="imgs/net_board.png" alt="board">
+                    <div class="project__description">
+                        <h3>.net Board</h3>
+                        <span>HTML, CSS, Javascript, C#, .net, MS server</span>
+                    </div>
+                </a>
+                <a href="https://github.com/bom318/UpdatePractice.git" class="project" target="_blank" data-type="solo">
+                    <img class="project__img" src="imgs/FILE.png" alt="file_upload">
+                    <div class="project__description">
+                        <h3>.net File Management</h3>
+                        <span>HTML, CSS, Javascript, C#, .net, MS server</span>
+                    </div>
+                </a>
+                <a href="" class="project" target="_blank" data-type="solo">
+                    <img class="project__img" src="imgs/ready.png" alt="my recipe">
+                    <div class="project__description">
+                        <h3>My Recipe</h3>
+                        <span>HTML, CSS, Javascript, Spring Boot, MariaDB</span>
+                    </div>
+                </a>
 
+            </div>
         </div>
-       </div>
     </section>
     <!-- Contact -->
     <section id="contact" class="section">
@@ -213,6 +210,10 @@
             2022 made by.Bomi
         </p>
     </section>
+    <!-- Arrow -->
+    <button class="arrow-up">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
 
 </body>
 
