@@ -154,23 +154,32 @@ p {
 }
 
 /* About */
+#about {
+    background-color: var(--color-light-white);
+}
 .about__intro {
+    margin: 40px;
     display: flex;
-    justify-content: space-between;
-    margin-top: 80px;
+    margin: 32px 0;
 }
 .about__photo img{
-    width: 250px;
-    height: 350px;
+    width: 150px;
+    height: 250px;
     border-radius: 50%;
+    margin-right: 12px;
+}
+
+.about__contents {
+    padding: 18px;
+    background-color: var(--color-white);
+    border-radius: 4px;
 }
 
 .about__intro__title {
     font-size: var(--font-medium);
-    font-weight: var(--weight-bold);
-    color: var(--color-grey);
+    font-weight: var(--weight-semi-bold);
+    color: var(--color-dark-grey);
 }
-
 .about__intro__description {
     color: var(--color-dark-grey);
 }
@@ -366,3 +375,5 @@ p {
     margin-left: -12px;
     margin-top: 8px;
 }
+
+/* Contact */

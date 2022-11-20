@@ -40,63 +40,63 @@
         <br /><button class="home__contect">CONTECT ME</button>
     </section>
     <!-- About -->
-    <section id="about" class="section section__container">
-        <h1>About me</h1>
-        <div class="about__intro">
-            <div class="about__photo">
-                <img src="imgs/profile.jpg" alt="Profile">
-            </div>
-            <div class="about__contents">
-                <div class="about__intro__title">즐겁고 욕심있게 공부하는 개발자</div><br />
-                <div class="about__intro__description">
-                    전공자도 관련 경력자도 아닌 제가 '개발' 일을 선택한 단 한가지 이유는 끊임없이 공부해야 한다는 것이었습니다.<br />
-                    계속해서 성장하며 여러 문제들을 해결해 나간다는 점이 저의 인생 가치관과 잘 맞는다는 생각이 들었고, <br />
-                    이 일이 혼자하는 것이 아닌 다른 사람들과 함께 협력해 나간다는 점에서 저의 공동체 생활 경험들을 녹여 잘 소통할 수 있다고 생각했습니다.<br />
-                    많은 분들과 함께 끊임없이 성장하는 개발자가 되고 싶습니다.
+    <section id="about" class="section">
+        <div class="section__container">
+            <h1>About me</h1>
+            <div class="about__intro">
+                <div class="about__photo">
+                    <img src="imgs/profile.jpg" alt="Profile">
+                </div>
+                <div class="about__contents">
+                    <div class="about__intro__title">즐겁고 욕심있게 공부하는 개발자</div><br />
+                    <div class="about__intro__description">
+                        전공자도 관련 경력자도 아닌 제가 '개발' 일을 선택한 단 한가지 이유는 끊임없이 공부해야 한다는 것이었습니다.<br />
+                        계속해서 성장하며 여러 문제들을 해결해 나간다는 점이 저의 인생 가치관과 잘 맞는다는 생각이 들었고, <br />
+                        이 일이 혼자하는 것이 아닌 다른 사람들과 함께 협력해 나간다는 점에서 저의 공동체 생활 경험들을 녹여 잘 소통할 수 있다고 생각했습니다.<br />
+                        많은 분들과 함께 끊임없이 성장하는 개발자가 되고 싶습니다.
+                    </div>
                 </div>
             </div>
+            <div class="about__majors">
+                <div class="major">
+                    <div class="major__icon">
+                        <i class="fa-brands fa-html5"></i>
+                    </div>
+                    <h2 class="major__title">Front-end</h2>
+                    <div class="major__description">
+                        HTML, CSS, JavaScript
+                    </div>
+                </div>
+                <div class="major">
+                    <div class="major__icon">
+                        <i class="fa-solid fa-server"></i>
+                    </div>
+                    <h2 class="major__title">ASP.net</h2>
+                    <div class="major__description">
+                        C#, ASP.net
+                    </div>
+                </div>
+                <div class="major">
+                    <div class="major__icon">
+                        <i class="fa-solid fa-server"></i>
+                    </div>
+                    <h2 class="major__title">Spring Framework</h2>
+                    <div class="major__description">
+                        Java, Spring Framework, Spring Boot
+                    </div>
+                </div>
+            </div>
+            <div class="jobs">
+                <div class="job">
+                    <img src="imgs/KIC_logo.png" alt="academy" class="job__logo">
+                    <div class="job__description">
+                        <p class="job__name">스프링 프레임워크 기반의 자바 웹개발자 양성과정 수료</p>
+                        <p class="job__period">2020.12 ~ 2021.05</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-
-        </div>
-        <div class="about__majors">
-            <div class="major">
-                <div class="major__icon">
-                    <i class="fa-brands fa-html5"></i>
-                </div>
-                <h2 class="major__title">Front-end</h2>
-                <div class="major__description">
-                    HTML, CSS, JavaScript
-                </div>
-            </div>
-            <div class="major">
-                <div class="major__icon">
-                    <i class="fa-solid fa-server"></i>
-                </div>
-                <h2 class="major__title">ASP.net</h2>
-                <div class="major__description">
-                    C#, ASP.net
-                </div>
-            </div>
-            <div class="major">
-                <div class="major__icon">
-                    <i class="fa-solid fa-server"></i>
-                </div>
-                <h2 class="major__title">Spring Framework</h2>
-                <div class="major__description">
-                    Java, Spring Framework, Spring Boot
-                </div>
-            </div>
-        </div>
-        </div>
-        <div class="jobs">
-            <div class="job">
-                <img src="imgs/KIC_logo.png" alt="academy" class="job__logo">
-                <div class="job__description">
-                    <p class="job__name">스프링 프레임워크 기반의 자바 웹개발자 양성과정 수료</p>
-                    <p class="job__period">2020.12 ~ 2021.05</p>
-                </div>
-            </div>
-        </div>
     </section>
     <!-- Skills -->
     <section id="skills" class="section">
@@ -109,16 +109,30 @@
             </p>
             <div class="skillset">
                 <div class="skillset__progress">
-                    <div class="chart skillset__progress__html" style="background: conic-gradient(#fe918d 0% 90%, #eeeeee 90% 10%)"><span class="title">HTML</span></div>
-                    <div class="chart skillset__progress__CSS" style="background: conic-gradient(#fe918d 0% 80%, #eeeeee 80% 20%)"><span class="title">CSS</span></div>
-                    <div class="chart skillset__progress__Js" style="background: conic-gradient(#fe918d 0% 70%, #eeeeee 70% 30%)"><span class="title">Java Script</span></div>
-                    
+                    <div class="chart skillset__progress__html"
+                        style="background: conic-gradient(#fe918d 0% 90%, #eeeeee 90% 10%)"><span
+                            class="title">HTML</span></div>
+                    <div class="chart skillset__progress__CSS"
+                        style="background: conic-gradient(#fe918d 0% 80%, #eeeeee 80% 20%)"><span
+                            class="title">CSS</span></div>
+                    <div class="chart skillset__progress__Js"
+                        style="background: conic-gradient(#fe918d 0% 70%, #eeeeee 70% 30%)"><span class="title">Java
+                            Script</span></div>
+
                 </div>
                 <div class="skillset__progress">
-                    <div class="chart skillset__progress__Java" style="background: conic-gradient(#fe918d 0% 70%, #eeeeee 70% 30%)"><span class="title">Java</span></div>
-                    <div class="chart skillset__progress__Spring" style="background: conic-gradient(#fe918d 0% 70%, #eeeeee 70% 30%)"><span class="title">Spring</span></div>
-                    <div class="chart skillset__progress__C" style="background: conic-gradient(#fe918d 0% 60%, #eeeeee 60% 40%)"><span class="title">C#</span></div>
-                    <div class="chart skillset__progress__net" style="background: conic-gradient(#fe918d 0% 40%, #eeeeee 40% 60%)"><span class="title">.net</span></div>
+                    <div class="chart skillset__progress__Java"
+                        style="background: conic-gradient(#fe918d 0% 70%, #eeeeee 70% 30%)"><span
+                            class="title">Java</span></div>
+                    <div class="chart skillset__progress__Spring"
+                        style="background: conic-gradient(#fe918d 0% 70%, #eeeeee 70% 30%)"><span
+                            class="title">Spring</span></div>
+                    <div class="chart skillset__progress__C"
+                        style="background: conic-gradient(#fe918d 0% 60%, #eeeeee 60% 40%)"><span
+                            class="title">C#</span></div>
+                    <div class="chart skillset__progress__net"
+                        style="background: conic-gradient(#fe918d 0% 40%, #eeeeee 40% 60%)"><span
+                            class="title">.net</span></div>
                 </div>
                 <div class="skillset__bottom">
                     <div class="tools">
