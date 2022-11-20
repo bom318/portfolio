@@ -145,6 +145,10 @@ p {
 .section {
     padding: 50px;
     text-align: center;
+    margin: auto;
+}
+
+.section__container {
     max-width: 1000px;
     margin: auto;
 }
@@ -225,4 +229,46 @@ p {
 
 .job__logo {
     width: 150px;
+}
+
+/* skills */
+#skills {
+    background-color: var(--color-yellow);
+}
+
+.skillset {
+    position:relative;
+    padding: 5%;
+}
+.skillset__progress {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.chart {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    background: var(--color-light-white);
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.title {
+    background: var(--color-white);
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 80px;
+    font-size: var(--font-small);
+    transform: translate(-50%, -50%);
+}
+.skillset__bottom {
+    margin-top: 80px;
 }
